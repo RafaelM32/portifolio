@@ -49,3 +49,7 @@ function registration_answer(answer){
 // Add a button listener
 
 button.addEventListener('click', sendData)
+
+// add event to enter key pressed
+
+document.addEventListener('keydown', (keyPressed) => { if(keyPressed.key == "Enter"){sendData()}})

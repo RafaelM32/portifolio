@@ -18,7 +18,6 @@ def login():
 @app.route('/create_account', methods=["POST"])
 def create_account():
     user_data = request.json
-    print(user_data)
     return make_response(jsonify(create_new_account(user_data)))  
 
 
