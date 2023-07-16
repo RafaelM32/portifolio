@@ -27,8 +27,8 @@ function sendData(){
     if(verifyEmpty())
         {
         fetch("http://127.0.0.1:5000/create_account",{method: "POST",
-                                                    headers: {"Content-Type": "application/json"},
-                                                    body: JSON.stringify({  "name" : user_name.value,
+                                                      headers: {"Content-Type": "application/json"},
+                                                      body: JSON.stringify({"name" : user_name.value,
                                                                             "email": user_email.value,
                                                                             "password": user_password.value,
                                                                             "birth date": birth_date.value})})
