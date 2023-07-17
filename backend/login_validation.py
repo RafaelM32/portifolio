@@ -8,8 +8,8 @@ def verify_login(login):
     
     #verifying login
     if login["email"] in data["email"].unique():
-        senha = data[(data["email"] == login["email"])]["password"].unique()[0]
-        if login["password"] == senha:
+        hash_user = data[(data["email"] == login["email"])]["hash"].unique()[0]
+        if hash_user_login(login) == hash_user:
             name = data[(data["email"] == login["email"])]["name"].unique()[0]
             return {"resp": True, "name": name}
         else:
@@ -25,7 +25,6 @@ def verify_login(login):
 
 def create_new_account(user_data):
     data = pd.read_csv("users_data.csv", dtype={"id":str})
-    print(f"A quantidade de usuarios é de {len(data)}")
     if len(data) == 0:
         user_data["id"] = '0000000'
         user_data["status"] = "admin"
@@ -60,7 +59,6 @@ def create_new_account(user_data):
 
 #making a hash of login and password
 
-test_user = {"email": "raphaelmenezesvill@gmail.com", "password": "krytusklinb"}
 
 def hash_user_login(user_data):
     login = user_data['email'] + user_data['password']
