@@ -54,7 +54,7 @@ def create_new_account(user_data):
             data.to_csv("users_data.csv", index=False)
             return {"resp": True}
         else:
-            return {"resp": False, "notification": "email alrely registred"}
+            return {"resp": False, "notification": "username alrely registred"}
 
 
 #making a hash of login and password
