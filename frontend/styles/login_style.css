@@ -2,8 +2,14 @@
     display: grid;
     grid-template-rows: 10% 90%;
     min-width: 600px;
+    background-color: #e7d7c1;
+    padding-bottom: 21.6%;
+    margin-left: -1%;
+    margin-top: -1%;
+
 }
 #content_wraper{
+    
     text-align: center;
     margin-top: 1%;
 }
@@ -17,8 +23,8 @@ label{
 button{
     box-sizing: border-box;
     width: 60%;
-    background-color: black;
-    color: white;
+    background-color: #8ea4d2;
+    color: black;
     padding: 6%;
     margin-top: 7%;
 }
@@ -28,6 +34,7 @@ button{
     text-align: center;
     width: 18%;
     margin-left: 41%;
+    
 }
 
 label{
@@ -39,10 +46,11 @@ label{
 
 input{
     box-sizing: border-box;
-    border: 1px solid;
+    border: dashed #50514f 5px;
     width: 100%;
     padding: 6%;
     font-size: large;
+    background-color: #e7d7c1;
 
 }
 
@@ -54,7 +62,6 @@ input{
 
 h1{
     font-size: 3pc;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #error_msg{
     color: red;
@@ -68,6 +75,7 @@ h1{
     margin-bottom: 2%;
     font-size: small;
     text-decoration: underline;
+    
 }
 
 a{

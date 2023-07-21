@@ -1,0 +1,201 @@
+#wrapper{
+    z-index: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 49% 51%;
+    background-color: #e7d7c1;
+    border: dashed #50514f 18px;
+    min-width: 1300px;
+    margin: -0.4%;
+}
+#alert{
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    width: 99%;
+    margin-top: 17%;
+    
+}
+#inside-alert{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    color: #56a3a6;
+}
+#button-div{
+    text-align: left;
+}
+#close-button{
+    color: white;
+    background-color: #e0607e;
+}
+
+#foto-wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-right: dashed #50514f 18px;
+    border-bottom: dashed #50514f 18px;
+}
+
+#right-wrap{
+    text-align: right;
+}
+
+#contats{
+    text-align: right;
+    margin-left: 69%;
+    margin-top: -3%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    
+}
+
+
+#contat-wrap{
+    border-bottom: dashed #50514f 18px;
+}
+
+#name{
+    margin-top: 2%;
+    font-size: 10ch;
+    margin-right: 10%;
+}
+h1{
+    margin: 0%;
+    font-size: 10ch;
+}
+
+#job{
+    margin-top: -2%;
+    font-size: 5ch;
+    margin-right: 10%;
+}
+
+#my-information{
+    text-align: justify;
+    font-size: 2.5ch;
+    margin-top: 4.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#about-me-wrap{
+    display: grid;
+    border-right: dashed #50514f 18px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 458px;
+}
+
+#perfil-img{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    border-radius: 50%;
+    width: 311px;
+}
+
+#skils{
+    margin-top: 25%;
+    margin-left: 15%;
+    font-size: 3.6ch;
+}
+
+strong{
+    color: #e0607e;
+}
+
+#python{
+    list-style-image: url(../img/python_ico.png);
+}
+#java{
+    list-style-image: url(../img/java_ico.png);
+}
+
+#css{
+    list-style-image: url(../img/css_ico.png);
+}
+
+#html{
+    list-style-image: url(../img/html_ico.png);
+}
+
+#javascript{
+    list-style-image: url(../img/javascript_ico.png);
+}
+
+#git{
+    list-style-image: url(../img/git_ico.png);
+}
+
+#skils_curricullum{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+#curricullum{
+    visibility: hidden;
+}
+
+#projects-wrap{
+    display: auto;
+    position: relative;
+
+}
+
+h2{
+    font-size: 5ch;
+    margin-top: 2%;
+}
+
+#title{
+    display: grid;
+    text-align: center;
+    border-bottom: dashed #50514f 15px;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    overflow: auto;
+    padding-left: 10%;
+    max-height: 541px;    
+}
+
+#project{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    margin-top: 7%;
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    border: solid #50514f 1px;
+}
+#project-img{
+    width: 200px;
+    height: 200px;
+}
+#icon-tecnologies{
+    width: 200px;
+    height: 40px;
+    display: grid;
+    border-top: solid #50514f 1px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+;
+}
+#icon-tecnologe{
+    width: 45px;
+    height: 45px;
+}
+
+.hiden{
+    visibility: hidden;
+}
+
+::-webkit-scrollbar{
+    background-color: #e7d7c1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #e0607e;
+}
